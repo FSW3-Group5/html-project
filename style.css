@@ -44,16 +44,7 @@ ul.timeline > li:before {
     color: white;
     transition: 0.5s;
 }
-/* .box-year {
-    border: 1px solid;
-    border-radius: 5px;
-    background-color: #22c0e8;
-    color: white;
-    padding: auto;
-    width: max-content;
-    height: max-content;
-    padding-top: 5px;
-} */
+
 /* setting margin atas pada title education & experience */
 #resume h3 {
     margin-top: 40px;
