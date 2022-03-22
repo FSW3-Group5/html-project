@@ -13,6 +13,10 @@
             color: #3F3D56;
         }
 
+        .navbar {
+            background-color: #3F3D56;
+        }
+
         ul.timeline {
             list-style-type: none;
             position: relative;
@@ -59,7 +63,7 @@
 
         /* setting box-resume saat diarahkan kursor */
         .box-resume:hover {
-            background-color: #22c0e8;
+            background-color: #3F3D56;
             color: white;
             transition: 0.5s;
         }
@@ -88,10 +92,33 @@
     </style>
 </head>
 
-<body>
-    <nav class="navbar sticky-top navbar-light bg-light z-index">
+<body data-bs-spy="scroll" data-bs-target="#navbar-scrollspy" data-bs-offset="50">
+    <nav class="navbar navbar-expand-md sticky-top navbar-dark z-index" id="navbar-scrollspy">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Fixed top</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <!-- <a class="navbar-brand" href="#">Hidden brand</a> -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Hero">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#About">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Resume">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Skill">Skill</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
@@ -204,7 +231,7 @@
         <div class="container-fluid p-5 pt-0 mb-5">
             <h3 class="text-center m-5">Skill</h3>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 mb-3">
                     <div class="progress-container progress-primary"><span class="progress-badge">Photographs</span>
                         <div class="progress">
                             <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
@@ -212,7 +239,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 mb-3">
                     <div class="progress-container progress-primary"><span class="progress-badge">Videographs</span>
                         <div class="progress">
                             <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
@@ -222,7 +249,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 mb-3">
                     <div class="progress-container progress-primary"><span class="progress-badge">Adobe Photoshop</span>
                         <div class="progress">
                             <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
@@ -230,7 +257,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 mb-3">
                     <div class="progress-container progress-primary"><span class="progress-badge">Adobe
                             Ilustrator</span>
                         <div class="progress">
@@ -241,7 +268,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 mb-3">
                     <div class="progress-container progress-primary"><span class="progress-badge">Adobe Premiere</span>
                         <div class="progress">
                             <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
@@ -249,7 +276,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 mb-3">
                     <div class="progress-container progress-primary"><span class="progress-badge">Adobe After
                             Effect</span>
                         <div class="progress">
@@ -260,7 +287,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 mb-3">
                     <div class="progress-container progress-primary"><span class="progress-badge">Gimp</span>
                         <div class="progress">
                             <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
@@ -268,7 +295,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 mb-3">
                     <div class="progress-container progress-primary"><span class="progress-badge">Davinci Resolve</span>
                         <div class="progress">
                             <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
@@ -286,14 +313,16 @@
         <div class="container-fluid p-5 my-5">
             <h3 class="text-center m-5">Contact</h3>
             <div class="row row-padding d-flex align-items-center">
-                <div class="col-md-4 d-flex justify-content-center mb-3">
-                    <h6 class="">My Email</h6>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-mailbox" viewBox="0 0 16 16">
-                        <path d="M4 4a3 3 0 0 0-3 3v6h6V7a3 3 0 0 0-3-3zm0-1h8a4 4 0 0 1 4 4v6a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V7a4 4 0 0 1 4-4zm2.646 1A3.99 3.99 0 0 1 8 7v6h7V7a3 3 0 0 0-3-3H6.646z"/>
-                        <path d="M11.793 8.5H9v-1h5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.354-.146l-.853-.854zM5 7c0 .552-.448 0-1 0s-1 .552-1 0a1 1 0 0 1 2 0z"/>
+                <div class="col-md-2 d-flex justify-content-center mb-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor"
+                        class="bi bi-mailbox" viewBox="0 0 16 16">
+                        <path
+                            d="M4 4a3 3 0 0 0-3 3v6h6V7a3 3 0 0 0-3-3zm0-1h8a4 4 0 0 1 4 4v6a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V7a4 4 0 0 1 4-4zm2.646 1A3.99 3.99 0 0 1 8 7v6h7V7a3 3 0 0 0-3-3H6.646z" />
+                        <path
+                            d="M11.793 8.5H9v-1h5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.354-.146l-.853-.854zM5 7c0 .552-.448 0-1 0s-1 .552-1 0a1 1 0 0 1 2 0z" />
                     </svg>
                 </div>
-                <div class="col-md-8 mt-3">
+                <div class="col-md-10 mt-3">
                     <form action="">
                         <div class="mb-3">
                             <label class="form-label">Email address</label>
